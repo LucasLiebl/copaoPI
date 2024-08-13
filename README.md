@@ -17,49 +17,16 @@ Links do projeto:
 -   Backend: [Repositório](https://github.com/LucasLiebl/copao-backend) e [Publicação](https://pi-backend.herokuapp.com/)
 -   Frontend: [Repositório](https://github.com/LucasLiebl/copao-frontend) e [Publicação](https://pi-frontend.herokuapp.com/)
 
-# 1. Desenvolvimento
-*(Escolha um dos modelos de sistemas para desenvolver o projeto. Apague as informações desnecessárias depois.)*
--   As equipes serão avaliadas por cada etapa da documentação e entregas realizadas.
--   Cada equipe deverá escolher um sistema para o desenvolvimento das atividades, a partir dos modelos apresentados.
+# 1. Situação Problema
 
+O IFC Araquari é uma instituição federal de ensino, desde 2008 promovendo uma educação de qualidade de forma totalmente gratuita, por esse motivo é muito disputado.
+Tentando promover uma maior comunhão entre os alunos, a instituição organiza campeonatos envolvendo esportes totalmente interno, um dos principais é o Copão que dura em torno de 3 meses.
+O Copão é um campeonato de futsal de pontos corridos e com playoffs, como um campeonato profissional funciona, porem, a organização fica comprometida por falta de utensilios organizacionais.
+Os problemas começam quando não existe um lugar para armazenar as informações dos jogos, sendo os gols, assistencias, cartões(amarelos e vermelhos), rodadas, partidas, times e jogadores. Outro problema é a tabela de classificação, pois é dificil e demorado fazer manualmente, ainda mais caso um jogo atrasa e outra rodada inicia, 2 times então ficando com um jogo a menos. Outro problema é a visibilidade, é interessante que qualquer pessoa tenha acesso a classificação a todo momento, porem, não é algo que acontece. Com um sistema web seria muito mais fácil organizar esse campeonato, pois nele ficaria armazenada todas as informações, ele faria automaticamente as tabelas, e ainda estaria 24h por dia disponivel para quem queser acessa-lo.
 
-# 2. Situação Problema
+# 2. Descrição da proposta
 
-*(Nessa parte a equipe deve descrever a situação problema que será resolvida pelo sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.)*
-
-![Ciclo da Venda](docs/ciclo_da_venda.webp "Ciclo da Venda")
-
-Descrevem o que acontece atualmente na empresa em um contexto global,
-abordando o funcionamento da empresa como um todo, não apenas os “problemas” que lá ocorrem.
-
-Sabendo disso, seu papel é **detalhar o funcionamento da empresa escolhida na
-atualidade, ou seja, antes de seu novo software**, usando como base a situação que passamos, mas aprofundando os detalhes de como as coisas acontecem.
-
--   Pesquise sobre empresas do ramo escolhido
-    para entender como funcionam;
--   Aproveite seus conhecimentos previamente adquiridos na área da empresa que escolheu, se houver;
--   Simule uma situação real. Lembre-se que são propostas com empresas fictícias, sendo assim, você terá que tomar certas decisões sobre como a empresa funciona em relação às coisas que não estão definidas no documento base (por exemplo, no caso da padaria, dizemos que seu Genival contratou mais funcionários, mas saber quantos e o que fazem pode ser relevante para o software), então tente “visualizar” a empresa funcionando, como se você estivesse lá acompanhando o dia-a-dia;
-
-Seguindo essas dicas, você deve ser capaz de descrever o dia-a-dia da empresa selecionada. E para ajudar na organização do texto, indicamos uma abordagem em 3 etapas:
-
--   **Introdução**: comece com um parágrafo apresentando a empresa (nome, o que faz, tempo de existência, o dono, funcionários, etc);
--   **Situação-problema**: Aborde em detalhes como a empresa funciona, procurando seguir uma ordem lógica dos acontecimentos e organizando parágrafos diferentes para cada coisa diferente que for explicar (como faria em uma redação);
--   **Conclusão**: tenha um parágrafo de conclusão focando nos problemas que você notou dentro da situação problema analisada e aponte brevemente como um software poderia ajudar a resolvê-los.
-
-# 3. Descrição da proposta
-
-Após entender o problema, proponha uma solução que será útil nos aspectos de dificuldade encontrados. Assim, aqui você deverá **explicar de maneira resumida, e preferencialmente mais textual, como o software funcionará**. Pense nesse texto como uma **introdução ao seu cliente** do que você pretende fazer por ele, para que ele confirme se realmente está dentro do desejado e permita sua continuidade.
-
-**Alguns pontos importantes a se destacar são:**
-
--   **Qual o foco de ação do software** relacionado com os problemas levantados na análise da situação-problema. O que realmente o software vai fazer. Por exemplo, o foco de ação do Gmail é permitir o envio e recebimento de e-mails.
--   **Os níveis de usuário do sistema**. Somente o gestor tem acesso? E os funcionários? Talvez seja para ambos, ou para funcionários de cargos
-    diferentes, etc.
--   **O que poderá ser feito no software**.Apenas o principal, sem pensar em telas ou detalhes específicos, pois isso será feito em outro momento.
--   **Se houver mais de um nível de usuário**, ressaltar as diferenças entre eles na descrição da proposta.
-
-Tenha em mente que essa é uma etapa relativamente breve. Não é necessário um texto gigantesco, apenas dar uma noção do funcionamento do sistema. Mais adiante
-precisaremos ser bem detalhistas, todavia agora a intenção é apenas fazer algo que permita ao cliente nos dizer se estamos no caminho certo.
+O Software funcionará da seguinte forma: inicialmente serão cadastrados todas as informações dos times e jogadores, então o software vai criar a tabela e as rodadas de forma aleatoria. Conforme os jogos acontecem, serão armazenados as informação dos jogos, ou seja, o usuario deverá informar ao software, qual foi o placar, quem fez gol e quem levou algum cartão. De forma automatica o software atualizará a tabela de classificação, e as tabelas de artilharia e de assistencias. Depois que acabar as rodadas, será a fase dos playoffs, onde o sistema vai montar as semi finais, as chaves serão o primeiro e o quarto colocado, e o segundo e terceiro colocado. Os vencedores disputarão a final, assim, tendo um vencedor. Somente os administradores poderão registrar os dados, mas qualquer pessoa pode visualizar sem estar logado.
 
 # 4. Modelagem de Dados
 
